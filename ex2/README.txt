@@ -34,3 +34,5 @@ debugging an exception that is later caught.
 Run 'catch throw' and then re-run the program by running 'r' (you can do this in
 TUI mode or you can return to normal mode). Now as you see the stack is much shorter
 
+8. Fix main.cc by running 'continue' in the loop when the key is the problematic value
+
