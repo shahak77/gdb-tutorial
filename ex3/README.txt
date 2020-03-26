@@ -58,8 +58,13 @@ the execution has advanced. Each displayed expression has a number (the first is
 and so on) and can be canceled by running 'undisplay number' where number is the
 expression's number.
 
-Use gdb to find the line causing itsumim and the comment it out. Make sure that
+Use gdb to find the line causing itsumim and then comment it out. Make sure that
 the cyber count doesn't go below 9
+
+Here's a useful tip on how to comment out the line causing itsumim. The gdb command
+'edit' opens a text editor to the line you are currently at. The default text
+editor is ex so make sure you configure it to vim (of course) by defining the
+environment variable EDITOR to /usr/bin/vim
 
 --------------------------------------------------------------------------------
 
