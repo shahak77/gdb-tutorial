@@ -1,0 +1,12 @@
+Now that you've solved all the exercises, here are some extra gdb tips:
+
+1. If you're debugging an executable that runs gtest, gtest will catch any exception
+thrown and display it as a failure. This is annoying because we want gdb to break
+on the line that throwed the exception. To disable this gtest feature, simply set
+the environment variable GTEST_CATCH_EXCEPTIONS to 0
+
+2. If your executable has arguments (that needs to be given in the command line),
+in order to run the executable you will need to add the flag --args and then the
+gdb will run everything you gave to him as a shell command (this means you can also
+define environment variables this way). For example: gdb --args rm -rf /
+
